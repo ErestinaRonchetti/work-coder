@@ -14,7 +14,7 @@ body{
 
 /*-------------HEADER-----------*/
 header{
-    background-color: rgba(128, 113, 113, 0.658);
+    background-color: rgb(128, 113, 113);
     padding: 10px;
     font-size: 20px;
     position: sticky;
@@ -39,14 +39,44 @@ header nav ul{
 
 header nav ul li{
     margin: 5px 10px 5px 10px;
+    border-color: rgb(207, 207, 167);
 }
-
 header nav ul li a{
     text-decoration: none;
     color: black;
 }
+header nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(207, 207, 167);
+}
+
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    margin-right: 5px;
+    border-color: rgb(207, 207, 167);
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
 
 button {
+    font-family: 'Rubik', sans-serif;
     background-color: rgba(71, 66, 66, 0.699);
     color: rgb(207, 207, 167);
     padding: 6px 4px;
