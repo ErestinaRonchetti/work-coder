@@ -39,15 +39,16 @@ header nav ul{
 
 header nav ul li{
     margin: 5px 10px 5px 10px;
-    border-color: rgb(207, 207, 167);
 }
 header nav ul li a{
     text-decoration: none;
     color: black;
+    transition: background-color 0.5s, color 0.5s;
 }
 header nav ul li a:hover{
     text-decoration: underline;
     color: rgb(207, 207, 167);
+    transition: background-color 0.5s, color 0.5s;
 }
 
 
@@ -73,6 +74,7 @@ header nav ul li a:hover{
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 button {
@@ -85,14 +87,17 @@ button {
     font-size: 12px; 
     margin-left: 1px;
     font-weight: 8px;
+    transition: background-color 0.5s, color 0.5s;
 }
 h4{
     font-size: 15px;
 }
 /*------PSEUDOCLASE-----------*/
+
 button:hover{
     background-color: rgb(207, 207, 167);
     color: rgba(71, 66, 66, 0.699);
+    transition: background-color 0.5s, color 0.5s;
 }
 
 /*-------------MAIN-------------*/
@@ -115,6 +120,7 @@ button:hover{
 .hello p{
     font-size: 25px;
     color: rgba(71, 66, 66, 0.699);
+    text-align: justify;
 }
 .hello a{
     text-decoration: none;
@@ -123,7 +129,44 @@ button:hover{
     background-color: rgba(128, 113, 113, 0.658);
     margin: 10px;
     padding: 5px;
+    transition: background-color 0.5s, color 0.5s;
 }
+
+.hello img {
+    animation-name: slidein; 
+    animation-duration: 6s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+    animation-delay: 2s; 
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    25% {
+        transform: translateX(100px);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translateX(-100px);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.hello a:hover{
+    background-color: rgb(207, 207, 167);
+    color: rgba(71, 66, 66, 0.699);
+    transition: background-color 0.5s, co5lor 0.5s;
+}
+
+
 
 
 .belleza h2{
@@ -245,7 +288,9 @@ button:hover{
     margin: 15px;
     padding: 5px;
 }
+
 /*---------GRID EN SERVICIOS---------*/
+
 .grid-galeria{
     width: 100%;
     display: grid;
@@ -416,32 +461,45 @@ button:hover{
 
 /*--------------FOOTER-------------*/
 
-footer{
+
+footer {
     background-color: rgba(128, 113, 113, 0.658);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;   
+    justify-content: space-around;
 }
-footer h3{
-    font-size: 20px;
-    color: rgb(207, 207, 167);    
+footer section {
+    padding: 80px;
 }
-footer div img{
-    width: 70px;
-    height: 70px;
-    border: 2px solid rgba(119, 88, 88, 0.658);
-    border-radius: 6px;
-    margin: 10px 30px 10px 30px;
+footer section div {
+    display: block;
 }
-
-
+footer section div h3 {
+    color: rgba(71, 66, 66, 0.699);
+    margin-bottom: 10px;
+}
+footer section div a {
+    display: block;
+    margin-bottom: 5px;
+}
+footer p {
+    color: rgba(71, 66, 66, 0.699);
+    padding: 10px;
+}
 
 
 /*------------MEDIA QUERIES----------*/
 
-/*INDEX*/
+/*--------INDEX----------*/
 @media screen and (max-width: 890px) {
+    .hello p{
+        font-size: 20px;
+    }
+    header nav ul li a{
+        font-size: 15px;
+    }
+    .search-bar{
+        font-size: 10px;
+    }
     footer section {
     text-align: center;
     flex-direction: column;
@@ -454,134 +512,192 @@ footer div img{
     width: 70px;
     }
 }
-
-@media screen and (max-width: 632px){
+@media screen and (max-width: 580px){
     header {
         flex-direction: column;
         position: static;
         text-align: center;
         padding: 5px;
     }
-    header h2 {
+    header nav ul li a{
+        font-size: 15px;
+    }
+    .hello h2{
         font-size: 30px;
     }
-    .hello .click{
+    .hello p{
+        text-align: center;
         font-size: 18px;
-        text-align: center;
-    }
-    .hello .filosofia{
-        font-size: 18px;
-        text-align: center;
-    }
-    footer h3 {
-        font-size: 15px;
-        }
-}
-
-@media screen and (max-width: 490px){
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav ul li {
-        margin: 5px 0;
-        font-size: 15px;
-    }
-    .hello h2{
-        font-size: 28px;
-        text-align: center;
-    }
-    .hello .click{
-        font-size: 18px;
-        text-align: center;
-    }
-    .hello .filosofia{
-        font-size: 18px;
-        text-align: center;
-    }
-    header nav ul li {
-        margin: 2px 0;
-    }
-}
-
-@media screen and (max-width: 460px){
-    .hello h2{
-        font-size: 25px;
-        text-align: center;
     }
     .hello a{
         font-size: 15px;
     }
-    .hello .click{
-        font-size: 15px;
-        text-align: center;
-    }
-    .hello .filosofia{
-        font-size: 15px;
-        text-align: center;
-    }
-    .belleza h2{
-        font-size: 18px;
-    }
-    .hogar h2{
-        font-size: 18px;
+    .search-bar{
+        display: none;
     }
 }
-
-@media screen and (max-width: 440px){
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 350px){
+    header nav ul{
+        max-width: 100%;
     }
-    header nav ul li {
-        margin: 5px 0;
-        font-size: 15px;
+    header nav ul li a{
+        font-size: 13px;
+    }
+    header a img{
+        width: 80px;
+        height: 80px;
     }
     .hello h2{
-        font-size: 25px;
-        text-align: center;
-    }
-    header nav ul li {
-        margin: 2px 0;
-    }
-}
-
-@media screen and (max-width: 400px){
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav ul li {
-        margin: 5px 0;
-        font-size: 15px;
-    }
-}
-
-
-
-@media screen and (max-width: 350px){
-    header main{
-        width: 100%;
-    }
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav ul li {
-        margin: 5px 0;
-        font-size: 15px;
-    }
-        header h1{
         font-size: 20px;
         text-align: center;
     }
-    .hello h2{
-        font-size: 25px;
+    .hello p{
+        font-size: 18px;
         text-align: center;
     }
-    header nav ul li {
-        margin: 2px 0;
+    .belleza h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+    .hogar h2{
+        width: 100%;
+        font-size: 20px;
+    }
+    .footer{
+        display: block;
+        max-width: 100%;
+    }
+    .footer section {
+        margin-bottom: 15px;
     }
 }
+
+/*-----MEDIA QUERIES PRODUCTOS----*/
+
+@media screen and (max-width: 580px){
+    .producto-hogar h2{
+        font-size: 20px;
+    }
+    .producto-belleza h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 350px){
+    .producto-hogar h2{
+        font-size: 15px;
+    }
+    .producto-belleza h2{
+        font-size: 15px;
+    }
+}
+/*-----MEDIA QUERIES SERVICIOS----*/
+@media screen and (max-width: 890px){
+    .grid-galeria{
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 2px;
+    }
+    .servicios div{
+        width: 45%;
+        font-size: 15px;
+        text-align: center;
+        margin: 35px 35px 35px 35px;
+        padding: 40px;
+    }
+    .servicios div h2{
+        padding: 5px;
+    }
+    .servicios img{
+        width: 400px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 580px){
+    .grid-galeria div h3{
+        font-size: 15px;
+    }
+    .servicios div{
+        width: 40%;
+        font-size: 15px;
+        text-align: center;
+        margin: 50px 20px 20px 20px;
+        padding: 10px;
+    }
+    .servicios div h2{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .servicios img{
+        width: 300px;
+        height: 180px; 
+    }
+}
+@media screen and (max-width: 350px){
+    .servicios {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .servicios div{
+        width: 90%;
+        height: 220px;
+        border: 2px solid rgba(71, 66, 66, 0.699);
+        padding: 10px; 
+        margin: 0 auto; 
+    }
+    .servicios img {
+        display: block; 
+        margin: 0 auto; 
+        margin-top: 10px; 
+        margin-bottom: 20px;
+    }
+}
+
+/*-----MEDIA QUERIES NOSOTROS-----*/
+
+@media screen and (max-width: 890px){
+    .nosotros div{
+        width: 90%;
+        height: 600px;
+    }
+    .nosotros img{
+        width: 500px;
+        height: 350px;
+        padding: 5px; 
+    }
+}
+@media screen and (max-width: 580px){
+    .nosotros div{
+        width: 90%;
+        height: 550px;
+    }
+    .nosotros img{
+        width: 400px;
+        height: 250px;
+    }
+    .nosotros h3{
+        font-size: 20px;
+    }
+    .nosotros p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 350px){
+    .nosotros div{
+        width: 100%;
+        height: 600px;
+    }
+    .nosotros img{
+        width: 200px;
+        height: 150px;
+    }
+    .nosotros h3{
+        font-size: 18px;
+    }
+    .nosotros p {
+        font-size: 15px;
+    }
+}
+
+
 
 
