@@ -1,0 +1,82 @@
+header {
+    background-color: rgb(128, 113, 113);
+    padding: 10px;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin: 5px 10px 5px 10px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    transition: background-color 0.5s, color 0.5s;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: rgb(207, 207, 167);
+                        transition: background-color 0.5s, color 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+
+        form {
+            display: flex;
+
+            input[type="text"] {
+                padding: 8px;
+                margin-right: 5px;
+                border-color: rgb(207, 207, 167);
+            }
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.4s, color 0.4s;
+
+            &:hover {
+                background-color: rgb(207, 207, 167);
+                color: rgba(71, 66, 66, 0.699);
+                transition: background-color 0.5s, color 0.5s;
+            }
+        }
+    }
+
+    button {
+        font-family: 'Rubik', sans-serif;
+        background-color: rgba(71, 66, 66, 0.699);
+        color: rgb(207, 207, 167);
+        padding: 6px 4px;
+        border: 2px solid rgb(207, 207, 167);
+        cursor: pointer;
+        font-size: 12px;
+        margin-left: 1px;
+        font-weight: 8px;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    .fixed {
+    position: fixed
+    bottom 30px
+    right 15px
+    }
+}

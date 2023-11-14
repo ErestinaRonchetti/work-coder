@@ -1,0 +1,23 @@
+footer {
+    background-color: rgba(128, 113, 113, 0.658);
+    display: flex;
+    justify-content: space-around;
+
+    section {
+        padding: 80px;
+
+        div {
+            display: block;
+
+            h3 {
+                color: rgba(71, 66, 66, 0.699);
+                margin-bottom: 10px;
+            }
+
+            a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

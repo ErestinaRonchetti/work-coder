@@ -114,7 +114,7 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
-.hello h2{
+.hello h1{
     font-size: 40px;
 }
 .hello p{
@@ -224,12 +224,14 @@ button:hover{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.hogar div a{
+
+/*.hogar div a{
     text-decoration: none;
     color: rgb(207, 207, 167);
     background-color: rgb(128, 113, 113);
     padding: 2px;
-}
+}*/
+
 .hogar div h3{
     color: rgb(207, 207, 167);
     margin: 10px 0 10px 0;
@@ -339,7 +341,6 @@ button:hover{
     border-radius: 6px;
 }
 
-
 .producto-hogar h2{
     background-color: rgba(128, 113, 113, 0.658);
     color: rgba(71, 66, 66, 0.699);
@@ -355,12 +356,12 @@ button:hover{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.producto-hogar div a{
+/*.producto-hogar div a{
     text-decoration: none;
     color: rgb(207, 207, 167);
     background-color: rgb(128, 113, 113);
     padding: 2px;
-}
+}*/
 .producto-hogar div h3{
     color: rgb(207, 207, 167);
     margin: 10px 0 10px 0;
@@ -434,6 +435,9 @@ button:hover{
     margin: 10px;
     padding: 15px;
 }
+
+
+
 .contacto h2{
     background-color: rgba(128, 113, 113, 0.658);
     color: rgba(71, 66, 66, 0.699);
