@@ -4,7 +4,7 @@ footer {
     justify-content: space-around;
 
     section {
-        padding: 80px;
+        padding: 35px;
 
         div {
             display: block;
@@ -17,6 +17,11 @@ footer {
             a {
                 display: block;
                 margin-bottom: 5px;
+            }
+            img {
+                width: 60px;
+                max-width: 60px; 
+                height: auto;
             }
         }
     }

@@ -1,0 +1,252 @@
+/*--------INDEX----------*/
+
+@media screen and (max-width: 890px) {
+    .hello p {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+
+    .search-bar {
+        font-size: 10px;
+    }
+
+    footer section {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer h3 {
+        font-size: 15px;
+    }
+
+    footer a img {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    header {
+        flex-direction: column;
+        position: static;
+        text-align: center;
+        padding: 5px;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+
+    .hello h2 {
+        font-size: 30px;
+    }
+
+    .hello p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .hello a {
+        font-size: 15px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header nav ul {
+        max-width: 100%;
+    }
+
+    header nav ul li a {
+        font-size: 13px;
+    }
+
+    header a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hello h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hello p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .belleza h2,
+    .hogar h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .footer {
+        display: block;
+        max-width: 100%;
+    }
+
+    .footer section {
+        margin-bottom: 15px;
+    }
+}
+
+/*-----MEDIA QUERIES PRODUCTOS----*/
+
+@media screen and (max-width: 580px) {
+    .producto-hogar h2,
+    .producto-belleza h2 {
+        font-size: 20px;
+    }
+}
+
+// Media query común para max-width: 350px
+@media screen and (max-width: 350px) {
+    .producto-hogar h2,
+    .producto-belleza h2 {
+        font-size: 15px;
+    }
+}
+
+/*-----MEDIA QUERIES SERVICIOS----*/
+
+@media screen and (max-width: 890px) {
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 2px;
+    }
+
+    .servicios div {
+        width: 45%;
+        font-size: 15px;
+        text-align: center;
+        margin: 35px 35px 35px 35px;
+        padding: 40px;
+    }
+
+    .servicios div h2 {
+        padding: 5px;
+    }
+
+    .servicios img {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .grid-galeria div h3 {
+        font-size: 15px;
+    }
+
+    .servicios div {
+        width: 40%;
+        font-size: 15px;
+        text-align: center;
+        margin: 50px 20px 20px 20px;
+        padding: 10px;
+    }
+
+    .servicios div h2 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .servicios img {
+        width: 300px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .servicios {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .servicios div {
+        width: 90%;
+        height: 220px;
+        border: 2px solid rgba(71, 66, 66, 0.699);
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .servicios img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+/*-----MEDIA QUERIES NOSOTROS-----*/
+@media screen and (max-width: 890px) {
+    .nosotros div {
+        width: 90%;
+        height: 600px;
+    }
+
+    .nosotros img {
+        width: 500px;
+        height: 350px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .nosotros div {
+        width: 90%;
+        height: 550px;
+    }
+
+    .nosotros img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .nosotros h3 {
+        font-size: 20px;
+    }
+
+    .nosotros p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nosotros div {
+        width: 100%;
+        height: 600px;
+    }
+
+    .nosotros img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .nosotros h3 {
+        font-size: 18px;
+    }
+
+    .nosotros p {
+        font-size: 15px;
+    }
+}
+
+/*-----MEDIA QUERIES CONTACTOS-----*/
+
+@media screen and (max-width: 890px) {
+    .mapa, .contacto {
+        flex: 1 100%;
+        margin: 10px auto; 
+    }
+}
+
